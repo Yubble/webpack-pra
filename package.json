@@ -3,6 +3,9 @@
     "start": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "loader-utils": "^2.0.0",
+    "node-notifier": "^10.0.0",
+    "tapable": "^2.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
