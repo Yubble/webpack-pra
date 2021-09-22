@@ -30,10 +30,10 @@ module.exports = {
     //     ]
     // },
     plugins: [
-        new basicPlugin({
-            name: 'Yubble',
-            age: 19
-        }),
+        // new basicPlugin({
+        //     name: 'Yubble',
+        //     age: 19
+        // }),
         // new cyclePlugin(),
         new exPlugin()
     ]
