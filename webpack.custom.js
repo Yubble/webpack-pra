@@ -11,24 +11,24 @@ const cyclePlugin = require('./custom/cus-plugin-cycle')
 const exPlugin = require('./custom/cus-plugin-ex')
 
 module.exports = {
-    entry: './custom/main.js',
+    entry: './src/main.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'custom/dist')
     },
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /\.js$/,
-    //             use: [{
-    //                 loader: path.resolve('./custom/cus-loader'),
-    //                 options: {
-    //                     words: 'www'
-    //                 }
-    //             }]
-    //         }
-    //     ]
-    // },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: [{
+                    loader: path.resolve('./custom/cus-loader'),
+                    options: {
+                        words: 'www'
+                    }
+                }]
+            }
+        ]
+    },
     plugins: [
         // new basicPlugin({
         //     name: 'Yubble',
